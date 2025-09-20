@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colin Leong - Software Developer</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    <!-- Font Awesome -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />    <!-- Devicon -->
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav id="navbar">
+            <div id="logo">C</div>
+
+            <div id="hamburger" class="pointer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul id="nav-links">
+                <li><a href="#home" class="nav-link pointer active">Home</a></li>
+                <li><a href="#about" class="nav-link pointer">About</a></li>
+                <li><a href="#skills" class="nav-link pointer">Skills</a></li>
+                <li><a href="#projects" class="nav-link pointer">Projects</a></li>
+                <li><a href="#certs" class="nav-link pointer">Certs</a></li>
+                <li><a href="#contact" class="nav-link pointer">Contact</a></li>
+            </ul>
+
+            <div id="nav-indicator"></div>
+        </nav>
+
+        <!-- Toggle Theme Button -->
+        <button id="theme-toggle" class="pointer">
+            <i class="fas fa-moon"></i>
+        </button>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <div id="home-container">
+                <div id="home-text">
+                    <span id="home-intro">Hello, I am</span>
+                    <h1 id="home-name">Colin Leong</h1>
+                    <span id="home-role">Software Developer</span>
+                </div>
+                <div id="profile-container">
+                    <img src="images/profile.jpg" alt="Profile Image" id="profile-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <div id="about-content">
+                <p>Hello! I'm <span class="highlight">Colin Leong</span>, a first-year <span class="highlight">Computer Science (Hons)</span> student at <span class="highlight">Sunway University</span>.</p>
+                <p>My strongest skill is in <span class="highlight">Python</span>, and I often build automation scripts using <span class="highlight">Selenium</span> to automate repetitive tasks I encounter in daily workflows.</p>
+                <p>I'm passionate about <span class="highlight">Artificial Intelligence</span> and <span class="highlight">Computer Vision</span>. Currently, I'm expanding my knowledge using libraries such as <span class="highlight">Scikit-learn</span> and <span class="highlight">PyTorch</span>.</p>
+                <p>I'm also fascinated by <span class="highlight">Low-level Programming</span>. I don't just want to build scripts that work, I want to understand how they work.</p>
+                <p>In my free time, I often enroll in free courses offered by <span class="highlight">Harvard University</span> and <span class="highlight">Cisco Networking Academy</span>, constantly pushing myself to learn beyond the classroom.</p>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2 class="section-title">Education</h2>
+            <div id="education-container">
+
+                <!-- Education - University -->
+                <article class="education">
+                    <div class="logo-container">
+                        <img src="images/education/Sunway University Dark.png" alt="Sunway University" class="school-logo">
+                        <img src="images/education/Lancaster University Dark.png" alt="Lancaster University" class="school-logo">
+                    </div>
+                    <div class="education-details">
+                        <h3 class="school-name">Sunway University & Lancaster University<br>
+                            <span id="degree-tooltip">
+                                (Dual Degree Programme)
+                                <span id="degree-tooltip-text">
+                                    <span class="highlight">Lancaster University</span> oversees and moderates the programme delivered by <span class="highlight">Sunway University</span>, allowing degrees to be awarded by both institutions.
+                                </span>
+                            </span>
+                        </h3>
+                        <p class="programme">Bachelor of Science (Honours) in Computer Science</p>
+                        <p class="year">September 2024 - Current</p>
+                    </div>
+                </article>
+                
+                <!-- Education - College -->
+                <article class="education">
+                    <div class="logo-container">
+                        <img src="images/education/Sunway College Dark.png" alt="Sunway College" class="school-logo">
+                    </div>
+                    <div class="education-details">
+                        <h3 class="school-name">Sunway College</h3>
+                        <p class="programme">Foundation in Science & Technology</p>
+                        <p class="year">September 2023 - September 2024</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2 class="section-title">Skills</h2>
+            <div id="skills-container">
+                <div id="skills-subcontainer">
+
+                    <!-- Skills - Programming Languages -->
+                    <div class="skill-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-code" title="Programming Languages"></i>
+                            Programming Languages
+                        </h3>
+                        <div class="skill-item">
+                            <img src="images/languages/HTML.svg" alt="HTML" class="skill-icon">
+                            <div class="skill-content">
+                                <div class="skill-name">
+                                    <span>HTML</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-level">
+                                    <div class="skill-level-bar" skill-level="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/languages/CSS.svg" alt="CSS" class="skill-icon">
+                            <div class="skill-content">
+                                <div class="skill-name">
+                                    <span>CSS</span>
+                                    <span>60%</span>
+                                </div>
+                                <div class="skill-level">
+                                    <div class="skill-level-bar" skill-level="60"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/languages/JavaScript.svg" alt="JavaScript" class="skill-icon">
+                            <div class="skill-content">
+                                <div class="skill-name">
+                                    <span>JavaScript</span>
+                                    <span>50%</span>
+                                </div>
+                                <div class="skill-level">
+                                    <div class="skill-level-bar" skill-level="50"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/languages/Python.svg" alt="Python" class="skill-icon">
+                            <div class="skill-content">
+                                <div class="skill-name">
+                                    <span>Python</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-level">
+                                    <div class="skill-level-bar" skill-level="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/languages/Java.svg" alt="Java" class="skill-icon">
+                            <div class="skill-content">
+                                <div class="skill-name">
+                                    <span>Java</span>
+                                    <span>60%</span>
+                                </div>
+                                <div class="skill-level">
+                                    <div class="skill-level-bar" skill-level="60"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/languages/C.svg" alt="C" class="skill-icon">
+                            <div class="skill-content">
+                                <div class="skill-name">
+                                    <span>C</span>
+                                    <span>30%</span>
+                                </div>
+                                <div class="skill-level">
+                                    <div class="skill-level-bar" skill-level="30"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/languages/SQL.svg" alt="SQL" class="skill-icon">
+                            <div class="skill-content">
+                                <div class="skill-name">
+                                    <span>SQL</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-level">
+                                    <div class="skill-level-bar" skill-level="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skills - Frameworks & Libraries -->
+                    <div class="skill-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-cubes" title="Frameworks & Libraries"></i>
+                            Frameworks & Libraries
+                        </h3>
+                        <div class="skill-item">
+                            <img src="images/frameworks/Selenium.svg" alt="Selenium" class="skill-icon">
+                            <div class="skill-content">
+                                <div class="skill-name">
+                                    <span>Selenium</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-level">
+                                    <div class="skill-level-bar" skill-level="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/frameworks/Flask.svg" alt="Flask" class="skill-icon">
+                            <div class="skill-content">
+                                <div class="skill-name">
+                                    <span>Flask</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="skill-level">
+                                    <div class="skill-level-bar" skill-level="70"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/frameworks/Scikit-learn.svg" alt="Scikit-learn" class="skill-icon">
+                            <div class="skill-content">
+                                <div class="skill-name">
+                                    <span>Scikit-learn</span>
+                                    <span>40%</span>
+                                </div>
+                                <div class="skill-level">
+                                    <div class="skill-level-bar" skill-level="40"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/frameworks/Bootstrap.svg" alt="Bootstrap" class="skill-icon">
+                            <div class="skill-content">
+                                <div class="skill-name">
+                                    <span>Bootstrap</span>
+                                    <span>30%</span>
+                                </div>
+                                <div class="skill-level">
+                                    <div class="skill-level-bar" skill-level="30"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/frameworks/Pandas.svg" alt="Pandas" class="skill-icon">
+                            <div class="skill-content">
+                                <div class="skill-name">
+                                    <span>Pandas</span>
+                                    <span>20%</span>
+                                </div>
+                                <div class="skill-level">
+                                    <div class="skill-level-bar" skill-level="20"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills - Tools -->
+                <div id="tools-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-tools" title="Tools"></i>
+                        Tools
+                    </h3>
+                    <ul id="tools-container">
+                        <li class="tool-item">
+                            <img src="images/tools/GitHub.svg" alt="GitHub" class="tool-icon">
+                            <span>GitHub</span>
+                        </li>
+                        <li class="tool-item">
+                            <img src="images/tools/Oracle Apex.svg" alt="Oracle Apex" class="tool-icon">
+                            <span>Oracle Apex</span>
+                        </li>
+                        <li class="tool-item">
+                            <img src="images/tools/Linux.svg" alt="Linux" class="tool-icon">
+                            <span>Linux</span>
+                        </li>
+                        <li class="tool-item">
+                            <img src="images/tools/Ubuntu.svg" alt="Ubuntu" class="tool-icon">
+                            <span>Ubuntu</span>
+                        </li>
+                        <li class="tool-item">
+                            <img src="images/tools/Bash.svg" alt="Bash" class="tool-icon">
+                            <span>Bash</span>
+                        </li>
+                        <li class="tool-item">
+                            <img src="images/tools/Inkscape.svg" alt="Inkscape" class="tool-icon">
+                            <span>Inkscape</span>
+                        </li>
+                        <li class="tool-item">
+                            <img src="images/tools/GNUSim8085.svg" alt="GNUSim8085" class="tool-icon">
+                            <span>GNUSim8085</span>
+                        </li>
+                        <li class="tool-item">
+                            <img src="images/tools/VS Code.svg" alt="VS Code" class="tool-icon">
+                            <span>VS Code</span>
+                        </li>
+                        <li class="tool-item">
+                            <img src="images/tools/Eclipse.svg" alt="Eclipse" class="tool-icon">
+                            <span>Eclipse</span>
+                        </li>
+                        <li class="tool-item">
+                            <img src="images/tools/Jupyter.svg" alt="Jupyter" class="tool-icon">
+                            <span>Jupyter</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2 class="section-title">My Projects</h2>
+            
+            <div id="projects-container">
+                <!-- Project 1 - EduMaster -->
+                <article class="project">
+                    <div class="project-image-container">
+                        <img src="images/projects/EduMaster.png" alt="EduMaster" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">EduMaster</h3>
+                        <p class="project-description">EduMaster is a premium online learning platform built with pure HTML, CSS, and JavaScript. It offers a fully responsive frontend with pages for courses, instructors, and a contact form. The platform includes mock login and signup functionalities using placeholder data.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <a href="https://github.com/applejuice8/edumaster" target="_blank" class="project-link pointer">
+                            <i class="fa-brands fa-github"></i>
+                            Source Code
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 2 - Currency Converter -->
+                <article class="project">
+                    <div class="project-image-container">
+                        <img src="images/projects/Currency Converter.png" alt="Currency Converter" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Currency Converter</h3>
+                        <p class="project-description">A simple currency converter web application built with Flask, JavaScript, and the Frankfurter API. Convert between different currencies instantly with live exchange rates fetched by JavaScript through the API.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Flask</span>
+                            <span class="tag">Frankfurter API</span>
+                        </div>
+                        <a href="https://github.com/applejuice8/currency-converter" target="_blank" class="project-link pointer">
+                            <i class="fa-brands fa-github"></i>
+                            Source Code
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 3 - YouTube Channel Scraper -->
+                <article class="project">
+                    <div class="project-image-container">
+                        <img src="images/projects/YouTube Channel Scraper.png" alt="YouTube Channel Scraper" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">YouTube Channel Scraper</h3>
+                        <p class="project-description">A Flask-based web application that uses Selenium to scrape video information from a YouTube channel. Results are displayed in a table and can be exported to CSV via the Pandas library.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Flask</span>
+                            <span class="tag">Selenium</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Web Scraping</span>
+                        </div>
+                        <a href="https://github.com/applejuice8/youtube-scraper" target="_blank" class="project-link pointer">
+                            <i class="fa-brands fa-github"></i>
+                            Source Code
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 4 - Flappy Bird Clone -->
+                <article class="project">
+                    <div class="project-image-container">
+                        <img src="images/projects/Flappy Bird Clone.png" alt="Flappy Bird Clone" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Flappy Bird Clone</h3>
+                        <p class="project-description">A basic Flappy Bird clone developed using the Pygame library in Python, featuring collision detection, gravity-based movement, and score tracking.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Pygame</span>
+                            <span class="tag">Game Development</span>
+                        </div>
+                        <a href="https://github.com/applejuice8/flappy-bird" target="_blank" class="project-link pointer">
+                            <i class="fa-brands fa-github"></i>
+                            Source Code
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certs">
+            <h2 class="section-title">Certifications</h2>
+            <div id="certs-container">
+
+                <!-- Cert 1 - CS50x: Introduction to Computer Science -->
+                <article class="cert pointer">
+                    <img class="cert-image" src="images/certs/CS50x.png" alt="CS50x: Introduction to Computer Science">
+                    <div class="cert-details">
+                        <h3 class="cert-name">CS50x: Introduction to Computer Science</h3>
+                        <p class="cert-issuer">Harvard University</p>
+                    </div>
+                </article>
+
+                <!-- Cert 2 - CCNA: Introduction to Networks -->
+                <article class="cert pointer">
+                    <img class="cert-image" src="images/certs/CCNA Introduction to Networks.png" alt="CCNA: Introduction to Networks">
+                    <div class="cert-details">
+                        <h3 class="cert-name">CCNA: Introduction to Networks</h3>
+                        <p class="cert-issuer">Cisco</p>
+                    </div>
+                </article>
+
+                <!-- Cert 3 - Linux Unhatched -->
+                <article class="cert pointer">
+                    <img class="cert-image" src="images/certs/Linux Unhatched.png" alt="Linux Unhatched">
+                    <div class="cert-details">
+                        <h3 class="cert-name">Linux Unhatched</h3>
+                        <p class="cert-issuer">Cisco & NDG</p>
+                    </div>
+                </article>
+
+                <!-- Cert 4 - Introduction to Cybersecurity -->
+                <article class="cert pointer">
+                    <img class="cert-image" src="images/certs/Introduction to Cybersecurity.png" alt="Introduction to Cybersecurity">
+                    <div class="cert-details">
+                        <h3 class="cert-name">Introduction to Cybersecurity</h3>
+                        <p class="cert-issuer">Cisco</p>
+                    </div>
+                </article>
+
+                <!-- Cert 5 - Responsive Web Design -->
+                <article class="cert pointer">
+                    <img class="cert-image" src="images/certs/Responsive Web Design.png" alt="Responsive Web Design">
+                    <div class="cert-details">
+                        <h3 class="cert-name">Responsive Web Design</h3>
+                        <p class="cert-issuer">freeCodeCamp</p>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Fullscreen Cert Overlay -->
+            <div id="overlay">
+                <button id="close-btn" class="pointer">&times;</button>
+                <div id="overlay-cert">
+                    <img id="overlay-image" src="" alt="">
+                    <div id="overlay-details">
+                        <h2 id="overlay-name"></h2>
+                        <p id="overlay-issuer"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2 class="section-title">Get In Touch</h2>
+
+            <form id="contact-form" action="submitted.html" method="get" onsubmit="return validateForm()">
+                <div class="form-group">
+                    <div id="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="purpose-job" name="purpose" value="Job Opportunity" checked>
+                            <label for="purpose-job">Job Opportunity</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="purpose-collab" name="purpose" value="Collaboration">
+                            <label for="purpose-collab">Collaboration</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="purpose-others" name="purpose" value="Others">
+                            <label for="purpose-others">Others</label>
+                        </div>
+                    </div>
+                    <span id="purpose-error" class="error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <span id="name-error" class="error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <span id="email-error" class="error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <span id="message-error" class="error"></span>
+                </div>
+                
+                <button id="submit-button" class="pointer" type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Social Icons -->
+        <div id="social-icons">
+            <a href="https://github.com/applejuice8" target="_blank" class="social-icon pointer">
+                <i class="fa-brands fa-github"></i>
+                <span class="tooltip-text">GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/colin-leong-ba0a8233b/" target="_blank" class="social-icon pointer">
+                <i class="fab fa-linkedin"></i>
+                <span class="tooltip-text">LinkedIn</span>
+            </a>
+            <a href="https://www.instagram.com/colin_lhs/" target="_blank" class="social-icon pointer">
+                <i class="fab fa-instagram"></i>
+                <span class="tooltip-text">Instagram</span>
+            </a>
+            <a href="https://leetcode.com/u/colinleonghongseng/" target="_blank" class="social-icon pointer">
+                <i class="devicon-leetcode-plain"></i>
+                <span class="tooltip-text">LeetCode</span>
+            </a>
+            <a href="mailto:23075450@imail.sunway.edu.my" target="_blank" class="social-icon pointer">
+                <i class="fas fa-envelope"></i>
+                <span class="tooltip-text">Email</span>
+            </a>
+        </div>
+        
+        <!-- Copyright -->
+        <span id="copyright">
+            &copy; 2025 Colin Leong. All rights reserved.
+        </span>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="static/script.js"></script>
+</body>
+</html>
