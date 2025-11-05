@@ -403,7 +403,7 @@ section {
 }
 
 /* Skills Section - Tools Section */
-.tools-category {
+.skills-category {
     width: 100%;
     margin-top: 20px;
     background-color: var(--bg-secondary);
@@ -413,14 +413,14 @@ section {
     border: 1px solid var(--border-color);
 }
 
-.tools-container {
+.skills-subcontainer {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
 }
 
-.tool-item {
+.skill-item {
     list-style-type: none;
     border: 1px solid var(--border-color);
     display: flex;
@@ -435,14 +435,14 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.tool-item:hover {
+.skill-item:hover {
     color: var(--highlight);
     transform: translateY(-3px);
     box-shadow: 0 4px 8px var(--highlight);
     border-color: var(--highlight);
 }
 
-.tool-icon {
+.skill-icon {
     height: 30px;
     width: 30px;
 }
