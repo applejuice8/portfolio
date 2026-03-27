@@ -99,7 +99,7 @@ function handleScroll() {
 
             if (scrollY >= offsetTop && scrollY < offsetBot) {
                 sectionId = section.getAttribute('id');
-                if (sectionId === 'education') sectionId = 'about'; // Education Under About Section
+                // if (sectionId === 'education') sectionId = 'about'; // Education Under About Section
             }
         });
 
