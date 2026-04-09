@@ -124,28 +124,6 @@ function handleWindowResize() {
     });
 }
 
-// Animate Skill Bars
-function animateBars() {
-    window.addEventListener('scroll', function() {
-        const bars = document.querySelectorAll('.skill-level-bar');
-        const rect = document.getElementById('skills-subcontainer').getBoundingClientRect();
-
-        // Check If Section In View
-        const target = rect.top + 350;
-        if (target < window.innerHeight) {
-            setTimeout(function() {
-                bars.forEach(bar => {
-                    const level = bar.getAttribute('skill-level');
-                    bar.style.width = `${level}%`;
-                });
-            }, 300);
-
-            // Only Execute Once
-            window.removeEventListener('scroll', animateBars);
-        }
-    });
-}
-
 // Setup Cert Overlay
 function setupOverlay() {
     const certs = document.querySelectorAll('.cert');
@@ -175,59 +153,6 @@ function setupOverlay() {
         overlay.classList.remove('active');
         document.body.style.overflow = 'auto';
     })
-}
-
-// Form Validation
-function validateForm() {
-    // Get Form Values
-    const purpose = document.querySelector('input[name="purpose"]:checked');
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const message = document.getElementById('message').value.trim();
-
-    // Reset Error Messages
-    document.getElementById('purpose-error').textContent = '';
-    document.getElementById('name-error').textContent = '';
-    document.getElementById('email-error').textContent = '';
-    document.getElementById('message-error').textContent = '';
-    
-    let isValid = true;
-
-    // Validate Purpose
-    if (!purpose) {
-        document.getElementById('purpose-error').textContent = 'Purpose is required';
-        isValid = false;
-    }
-
-    // Validate Name
-    if (!name) {
-        document.getElementById('name-error').textContent = 'Name is required';
-        isValid = false;
-    }
-    else if (name.length < 3) {
-        document.getElementById('name-error').textContent = 'Name should be at least 3 characters long';
-        isValid = false;
-    }
-
-    // Validate Email
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!email) {
-        document.getElementById('email-error').textContent = 'Email is required';
-        isValid = false;
-    }
-    else if (!emailPattern.test(email)) {
-        document.getElementById('email-error').textContent = 'Please enter a valid email';
-        isValid = false;
-    }
-
-    // Validate Message
-    if (!message || message.length < 10) {
-        document.getElementById('message-error').textContent = 'Message should be at least 10 characters long';
-        isValid = false;
-    }
-
-    // Valid
-    return isValid;
 }
 
 // Main Method
