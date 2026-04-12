@@ -167,6 +167,5 @@ window.addEventListener('DOMContentLoaded', function() {
     setupLinks();
     handleScroll();
     handleWindowResize();
-    animateBars();
     setupOverlay();
 });
