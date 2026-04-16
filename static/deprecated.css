@@ -1,0 +1,21 @@
+#deprecated-banner {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background: #b91c1c;
+    color: #fef2f2;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#deprecated-banner a {
+    color: #fca5a5;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+#deprecated-banner a:hover {
+    color: #ffffff;
+}

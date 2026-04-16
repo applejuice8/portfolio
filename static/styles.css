@@ -72,7 +72,7 @@ body::-webkit-scrollbar-thumb {
 /* Navbar */
 #navbar {
     position: fixed;
-    top: 20px;
+    top: 60px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -144,7 +144,7 @@ body::-webkit-scrollbar-thumb {
 /* Toggle Theme Button */
 #theme-toggle {
     position: fixed;
-    top: 20px;
+    top: 60px;
     right: 2%;
     border: 2px solid var(--border-color);
     background: var(--bg-secondary);
